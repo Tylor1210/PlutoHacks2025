@@ -35,6 +35,45 @@ h1 {
     background: #f9f9f9;
     border-radius: 8px;
 }
+.item .header {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.item .name {
+    font-weight: bold;
+}
+
+.item .idea {
+    margin-top: 10px;
+    color: #555;
+}
+
+.item form {
+    display: flex;
+    flex-direction: column;
+}
+
+.item form label,
+.item form input,
+.item form textarea,
+.item form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.item form input,
+.item form textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.item form button {
+    width: auto; 
+    align-self: center; 
+}
 
 .item::before {
     content: '';
@@ -72,7 +111,7 @@ h1 {
     background: #0056b3;
 }
 
-/* Added for navigation buttons to match HTML */
+
 .nav-button {
     display: inline-block;
     padding: 10px 20px;
