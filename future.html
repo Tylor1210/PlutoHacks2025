@@ -1,34 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Tools of the Past</title>
-        <link rel="stylesheet" href="/style.css">
+        <title>Tools of the Future</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Tools of the Past</h1>
+            <h1>Tools of the Future</h1>
         </header>
         <main>
             <nav>
-                <button type="button" a href="#" alt="#"></button>
-                <button type="button" a href="#" alt="#"></button>
-                <button type="button" a href="#" alt="#"></button>
+                <a href="/past.html" class="nav-button nav-button-home" aria-label="Past">Past</a>
+                <a href="/present.html" class="nav-button nav-button-home" aria-label="Present">Present</a>
+                <a href="/future.html" class="nav-button nav-button-home" aria-label="Future">Future</a>
             </nav>
-            <section>
+            <section class="timeline">
                 <article>
-                    
+                    <h2>Share Your Vision of the Future</h2>
+                    <p>Submit your name, an estimated year, and an idea you believe will shape the future!</p>
+                    <div class="item">
+                        <form action="#" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            
+                            <label for="year">Estimated Year:</label>
+                            <input type="number" id="year" name="year" placeholder="e.g., 2030" min="2025" max="2100">
+                            
+                            <label for="idea">Future Idea:</label>
+                            <textarea id="idea" name="idea" placeholder="Describe your idea for the future" rows="4"></textarea>
+                            
+                            <button type="submit" class="nav-button">Submit Idea</button>
+                        </form>
+                    </div>
                 </article>
             </section>
-            <section>
-
+            <section class="timeline">
+                <h2>Future Ideas from Others</h2>
+                <div class="ideas-container">
+                    <div class="item">
+                        <p class="year">2035</p>
+                        <p><strong>Name:</strong> Alex Smith</p>
+                        <p><strong>Idea:</strong> Self-sustaining floating cities powered by solar and wave energy.</p>
+                    </div>
+                    <div class="item">
+                        <p class="year">2040</p>
+                        <p><strong>Name:</strong> Maria Gonzalez</p>
+                        <p><strong>Idea:</strong> Brain-computer interfaces for instant knowledge acquisition.</p>
+                    </div>
+                    <div class="item">
+                        <p class="year">2028</p>
+                        <p><strong>Name:</strong> Jay Patel</p>
+                        <p><strong>Idea:</strong> Affordable personal robots for household tasks.</p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
+            <p>Meet the Developers:</p>
             <p>&copy Isaiah Hornstein & Tylor Clont, Broward College Hackathon 2025</p>
             <ul>
-                <li><a href="https://github.com/40567horsch-svg"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="https://github.com/40567horsch-svg">Isaiah Hornstein</a></li>
+                <li><a href="https://github.com/Tylor1210">Tylor Clont</a></li>
+            </ul>
         </footer>
-      </body>
+    </body>
 </html>
